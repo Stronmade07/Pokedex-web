@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Web</title>
+    <meta name="description" content="Pokédex web que consume la PokéAPI. Proyecto integrador de APIs y JavaScript.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="app-header">
+        <div class="left-area">
+            <img src="assets/824565.png" alt="Pokebola" class="logo">
+            <h1 id="title">Pokédex Web</h1>
+        </div>
+
+        <button id="toggle-theme" class="theme-btn" aria-label="Cambiar modo">
+            🌙
+        </button>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="search-container">
+            <input 
+                type="text" 
+                id="pokemon-input" 
+                placeholder="Ingresa un nombre o ID (ej: pikachu, 25)">
+            
+            <button id="search-btn" class="btn-search">Buscar</button>
+            <button id="random-btn" class="btn-random">Aleatorio 🔀</button>
+        </section>
+
+        <!-- aria-live para que los cambios se anuncien (accesibilidad) -->
+        <section 
+            id="pokemon-container" 
+            class="pokemon-card"
+            aria-live="polite"
+            role="status"
+        >
+            <!-- Resultados generados por index.js -->
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        Creado por Edinson Cruz. Datos obtenidos de 
+        <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">PokéAPI</a>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

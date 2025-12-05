@@ -1,0 +1,346 @@
+/* ========================================
+   RESET Y VARIABLES GLOBALES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables para tema claro */
+:root {
+    --bg: #ffffff;
+    --text: #222222;
+    --header-bg: #f1f1f1;
+    --header-border: #cccccc;
+}
+
+/* Variables para tema oscuro */
+body.dark {
+    --bg: #1a1a1a;
+    --text: #f1f1f1;
+    --header-bg: #2a2a2a;
+    --header-border: #444444;
+}
+
+/* ========================================
+   ESTILOS GLOBALES DEL BODY
+   ======================================== */
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ========================================
+   HEADER Y NAVEGACIÓN
+   ======================================== */
+
+header {
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Título principal del header */
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Contenedor izquierdo: logo y título */
+.left-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+/* Título con flexbox para alineación */
+#title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+/* Logo/Pokebola */
+.logo {
+    height: 2.5rem; 
+    width: auto;
+    object-fit: contain;
+}
+
+/* Botón para cambiar tema */
+.theme-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: transform 0.2s;
+}
+
+/* ========================================
+   BUSCADOR
+   ======================================== */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 250px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* ========================================
+   TARJETA DEL POKÉMON
+   ======================================== */
+
+.pokemon-card {
+    max-width: 400px;
+    margin: auto;
+    background: var(--header-bg);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--header-border);
+    animation: card-enter 0.3s ease-out;
+}
+
+/* Imagen del Pokémon */
+.pokemon-card img {
+    width: 180px;
+}
+
+/* Título del Pokémon */
+.pokemon-card h2 {
+    margin-top: 10px;
+}
+
+/* Detalles y estadísticas del Pokémon */
+.pokemon-details {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Lista de estadísticas sin viñetas */
+.pokemon-details ul {
+    list-style: none;
+}
+
+/* ========================================
+   BOTONES
+   ======================================== */
+
+.btn-search {
+    background-color: #ff4757;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+.btn-random {
+    background-color: #7158e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    transition: transform 0.1s ease, opacity 0.2s ease;
+}
+
+/* Efecto hover en botones */
+.btn-search:hover,
+.btn-random:hover {
+    transform: scale(1.05);
+}
+
+/* Botones deshabilitados */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* ========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet: pantallas entre 641px y 1024px */
+@media (min-width: 641px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .search-container input {
+        width: 200px;
+        font-size: 1rem;
+    }
+
+    .pokemon-card {
+        max-width: 90%;
+    }
+}
+
+/* Mobile: pantallas entre 320px y 640px */
+@media (min-width: 320px) and (max-width: 640px) {
+    /* Header adaptado para móvil */
+    header {
+        padding: 10px 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .left-area {
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        height: 2rem;
+    }
+
+    .theme-btn {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        font-size: 1.5rem;
+    }
+
+    /* Buscador en móvil */
+    .search-container {
+        flex-direction: column;
+        gap: 8px;
+        margin: 15px auto;
+        padding: 0 10px;
+        align-items: center;
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .search-container input {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .search-container button {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px 10px;
+        font-size: 1rem;
+    }
+
+    /* Tarjeta del Pokémon */
+    .pokemon-card {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .pokemon-card img {
+        width: 140px;
+    }
+
+    .pokemon-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .pokemon-details h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Estadísticas más compactas */
+    .pokemon-details ul {
+        font-size: 0.95rem;
+    }
+
+    .pokemon-details ul li {
+        padding: 4px 0;
+    }
+
+    /* Footer en móvil */
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra pequeño: pantallas menores a 320px */
+@media (max-width: 319px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .left-area {
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .logo {
+        height: 1.2rem;
+    }
+
+    .theme-btn {
+        font-size: 1rem;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
+
+    /* Buscador muy compacto */
+    .search-container {
+        margin: 8px auto;
+        padding: 0 4px;
+        align-items: center;
+    }
+
+    .search-container input,
+    .search-container button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Tarjeta compacta */
+    .pokemon-card img {
+        width: 100px;
+    }
+
+    .pokemon-card h2 {
+        font-size: 1rem;
+    }
+
+    .pokemon-details ul {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        padding: 8px 4px;
+        font-size: 0.75rem;
+        margin-top: 12px;
+    }
+}
+
