@@ -27,10 +27,10 @@ Todo se actualiza al instante gracias a JavaScript.
 1. Descarga o abre este proyecto en tu computadora.
 2. Asegúrate de tener estos archivos juntos:
 
-index.html
-styles.css
-index.js
-assets/
+- index.html
+- styles.css
+- index.js
+- assets/
 
 3. Abre **index.html** con tu navegador (doble clic).
 4. Escribe un nombre o ID en el buscador.
@@ -46,14 +46,19 @@ Este proyecto usa la API gratuita de Pokémon:
 
 https://pokeapi.co/api/v2/pokemon/ditto
 
+---
 
+## 🧩 Estructura del proyecto
 
-
-3. Abre **index.html** con tu navegador (doble clic).
-4. Escribe un nombre o ID en el buscador.
-5. Presiona **Buscar** o usa el botón **Aleatorio**.
-
-¡Listo!
+PROYECTO-INTEGRADOR/
+│
+├─ assets/
+│   └─ 824565.png     → icono de la Pokédex
+│
+├─ index.html         → estructura principal de la página
+├─ styles.css         → estilos, colores y modo oscuro
+├─ index.js           → lógica de búsqueda y consumo de la PokéAPI
+└─ README.md          → documentación del proyecto
 
 
 ---
