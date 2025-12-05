@@ -50,6 +50,7 @@ https://pokeapi.co/api/v2/pokemon/ditto
 
 ## 🧩 Estructura del proyecto
 
+```
 PROYECTO-INTEGRADOR/
 │
 ├─ assets/
@@ -59,7 +60,7 @@ PROYECTO-INTEGRADOR/
 ├─ styles.css         → estilos, colores y modo oscuro
 ├─ index.js           → lógica de búsqueda y consumo de la PokéAPI
 └─ README.md          → documentación del proyecto
-
+```
 
 ---
 
