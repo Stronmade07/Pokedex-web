@@ -1,104 +1,85 @@
-Pokédex Web
+# Pokédex Web
 
-Este proyecto es una pequeña Pokédex hecha con HTML, CSS y JavaScript.
-La idea es simple: escribir el nombre o ID de un Pokémon y obtener su información usando la PokéAPI, todo dentro de una interfaz limpia, con modo claro/oscuro y un botón para buscar Pokémon aleatorios.
+Este proyecto es una pequeña Pokédex hecha con **HTML, CSS y JavaScript**.  
+La idea es simple: escribir el nombre o ID de un Pokémon y obtener su información usando la **PokéAPI**, dentro de una interfaz limpia con modo claro/oscuro y un botón para buscar Pokémon aleatorios.
 
-🌟 ¿Qué puedes hacer aquí?
+---
 
-Buscar cualquier Pokémon por nombre (ej: ditto, pikachu, lucario)
+## 🌟 ¿Qué puedes hacer aquí?
 
-Buscar por ID (ej: 1, 25, 132)
-
-Ver su:
-
-Imagen oficial
-
-Tipos
-
-Habilidades
-
-Altura y peso
-
-Estadísticas base
-
-Cambiar entre modo claro y oscuro
-
-Pedir un Pokémon aleatorio con un solo clic
+- Buscar cualquier Pokémon por **nombre** (ej: `ditto`, `pikachu`, `lucario`)
+- Buscar por **ID** (ej: `1`, `25`, `132`)
+- Ver su:
+  - Imagen oficial  
+  - Tipos  
+  - Habilidades  
+  - Altura y peso  
+  - Estadísticas base  
+- Cambiar entre **modo claro y oscuro**
+- Pedir un Pokémon **aleatorio** con un clic
 
 Todo se actualiza al instante gracias a JavaScript.
 
-🚀 Cómo usarlo
+---
 
-Descarga o abre este proyecto en tu computadora.
+## 🚀 Cómo usarlo
 
-Asegúrate de tener estos archivos juntos:
+1. Descarga o abre este proyecto en tu computadora.
+2. Asegúrate de tener estos archivos juntos:
 
 index.html
 styles.css
 index.js
 assets/
 
+3. Abre **index.html** con tu navegador (doble clic).
+4. Escribe un nombre o ID en el buscador.
+5. Presiona **Buscar** o usa el botón **Aleatorio**.
 
-Abre index.html con tu navegador (doble clic y listo).
+¡Listo!
 
-Escribe un nombre o ID en el buscador.
+---
 
-Presiona Buscar o usa Aleatorio si quieres sorprenderte.
-
-¡Eso es todo!
-
-🔗 Fuente de los datos
+## 🔗 Fuente de los datos
 
 Este proyecto usa la API gratuita de Pokémon:
-https://pokeapi.co/
-
-La URL base que utilizo es:
-
-https://pokeapi.co/api/v2/pokemon/{nombre-o-id}
-
-
-Ejemplo:
 
 https://pokeapi.co/api/v2/pokemon/ditto
 
-🧩 Estructura del proyecto
-PROYECTO-INTEGRADOR/
-│
-├─ assets/
-│   └─ 824565.png     → icono de la Pokédex
-│
-├─ index.html         → estructura de la página
-├─ styles.css         → diseño y modo oscuro
-├─ index.js           → lógica de búsqueda y consumo de la API
-└─ README.md          → este archivo
 
-🎨 Personalización
 
-Si quieres cambiar colores, tamaños, fuentes u organizar la tarjeta del Pokémon a tu estilo, puedes:
 
-Modificar styles.css para el diseño
+3. Abre **index.html** con tu navegador (doble clic).
+4. Escribe un nombre o ID en el buscador.
+5. Presiona **Buscar** o usa el botón **Aleatorio**.
 
-Editar mostrarPokemon() en index.js para reorganizar la información
+¡Listo!
 
-Cambiar imágenes o iconos en assets/
 
-🤝 Créditos
+---
 
-Proyecto creado por Edinson Cruz como parte de un trabajo integrador.
-Gracias a PokéAPI por permitir acceder a esta información de forma gratuita.
+## 🎨 Personalización
 
-🎉 Notas finales
+Puedes personalizar tu Pokédex modificando:
 
-Este proyecto es perfecto para practicar:
+- **styles.css** → colores, tamaños, fuente, modo oscuro  
+- **mostrarPokemon()** en index.js → estructura de la tarjeta  
+- **assets/** → iconos o imágenes
 
-Llamadas a APIs con fetch()
+---
 
-Manipulación del DOM
+## 🤝 Créditos
 
-Manejo de errores
+Proyecto creado por **Edinson Cruz** como parte de un trabajo integrador.  
 
-Modo oscuro con localStorage
+---
 
-Estructuración de proyectos web pequeños
+## 🎉 Notas finales
 
-Disfruta explorando Pokémon y mejorando la Pokédex a tu gusto. Siéntete libre de expandirla con más funciones.
+
+- Uso de APIs con `fetch()`
+- Manipulación del DOM
+- Manejo de errores
+- Modo oscuro con `localStorage`
+- Organización de archivos en proyectos web
+
