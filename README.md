@@ -32,7 +32,7 @@ Todo se actualiza al instante gracias a JavaScript.
 - index.js
 - assets/
 
-3. Abre **index.html** con tu navegador (doble clic).
+3. Ejecuto en tu navgegador con go live si tienes esta extension. 
 4. Escribe un nombre o ID en el buscador.
 5. Presiona **Buscar** o usa el botón **Aleatorio**.
 
@@ -89,3 +89,7 @@ Proyecto creado por **Edinson Cruz** como parte de un trabajo integrador.
 - Modo oscuro con `localStorage`
 - Organización de archivos en proyectos web
 
+
+## 👾 Pages de la Web
+
+https://stronmade07.github.io/Pokedex-web/
