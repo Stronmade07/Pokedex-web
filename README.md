@@ -32,7 +32,7 @@ Todo se actualiza al instante gracias a JavaScript.
 - index.js
 - assets/
 
-3. Ejecuto en tu navgegador con go live si tienes esta extension. 
+3. Ejecuta en tu navgegador con go live si tienes esta extension. 
 4. Escribe un nombre o ID en el buscador.
 5. Presiona **Buscar** o usa el botón **Aleatorio**.
 
